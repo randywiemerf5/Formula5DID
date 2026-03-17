@@ -28,21 +28,21 @@
   ],
   "verificationMethod": [
     {
-      "id": "#6561134a86c94d02b52fcfc69f290ef3vcSigningKey-b2803",
+      "id": "#6545ac29dcaa4eb9b19b47ab8c0ae84avcSigningKey-8f11e",
       "controller": "did:web:did.identity.formula5.com",
       "type": "JsonWebKey2020",
       "publicKeyJwk": {
         "crv": "P-256",
         "kty": "EC",
-        "x": "gQQkRbWEhB6oZNCo-iTErl2Ak7x_b9GNeg6XywgyczQ",
-        "y": "swKVARukgdtmRHXcnHTQk-dxZGv7ECSyPK8pM6lW2n8"
+        "x": "aPvbqm6BfKZIQxMgip2sa1NCGiOsoIP6_ev7N6apbHQ",
+        "y": "AawmyGBHoYi03cN5k1-gkbN65369NSCaYoYyrY-E3zw"
       }
     }
   ],
   "authentication": [
-    "#6561134a86c94d02b52fcfc69f290ef3vcSigningKey-b2803"
+    "#6545ac29dcaa4eb9b19b47ab8c0ae84avcSigningKey-8f11e"
   ],
   "assertionMethod": [
-    "#6561134a86c94d02b52fcfc69f290ef3vcSigningKey-b2803"
+    "#6545ac29dcaa4eb9b19b47ab8c0ae84avcSigningKey-8f11e"
   ]
 }
