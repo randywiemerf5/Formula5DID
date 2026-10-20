@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Recovery</title>
+
+<style>
+  /* Ensure dark background covers entire page */
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e; /* Dark background */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+  }
+
+  .vid-logo {
+    margin-bottom: 10px;
+  }
+
+  .vid-divider {
+    width: 60%;
+    height: 1px;
+    background-color: #CCCCCC;
+    margin: 20px auto;
+  }
+
+  .vid-title {
+    font-size: 24px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+
+  .vid-container {
+    background-color: #F2F2F2;   /* Light gray */
+    color: #000000;
+    width: 60%;
+		max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .vid-button {
+    display: block;
+    width: 80%;
+    padding: 14px 28px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #005A9E;   /* dark blue */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    margin: 12px auto;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+
+  .vid-button:hover {
+    background-color: #0078D4;   /* lighter blue */
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="vid-logo">
+    <img src="https://did.identity.formula5.com/logos/Formula5Logo.png"
+         alt="Abbott Logo" width="300" >
+  </div>
+
+  <div class="vid-divider"></div>
+
+  <div class="vid-title">Account Recovery</div>
+
+  <div class="vid-container">
+
+    <form action="https://vidaccountclaiming-b6c8gkapbacscghs.centralus-01.azurewebsites.net/verifier?brand=$brand&mode=TAP" method="GET">
+      <button type="submit" class="vid-button">Recover using TAP</button>
+    </form>
+
+    <form action="https://vidaccountclaiming-b6c8gkapbacscghs.centralus-01.azurewebsites.net/verifier?brand=$brand&mode=PWD" method="GET">
+      <button type="submit" class="vid-button">Recover using Password</button>
+    </form>
+
+  </div>
+
+</body>
+</html>
